@@ -154,14 +154,45 @@ footer{background:var(--footer);border-top:1px solid var(--line);padding:clamp(3
 .r.v{opacity:1;transform:none;}
 .r.d1{transition-delay:.1s;}.r.d2{transition-delay:.2s;}.r.d3{transition-delay:.3s;}
 
-@media(max-width:720px){
+@media(max-width:768px){
   nav,.h-actions{display:none;}
-  .phil{grid-template-columns:1fr;gap:28px;}
-  .diag-steps{grid-template-columns:1fr;}
-  .open-cta{flex-direction:column;align-items:center;}
+  .h-logo img{height:32px;}
+  .opening{padding:80px 20px 100px;}
+  .hero-logo{width:clamp(140px,60vw,240px);}
+  .tag{font-size:.7rem;letter-spacing:.18em;}
+  .hc-en{font-size:clamp(1.6rem,8vw,2.4rem);}
+  .hc-jp{font-size:.78rem;}
+  .open-cta{flex-direction:column;align-items:stretch;width:100%;max-width:320px;gap:10px;}
+  .btn-p,.btn-g{justify-content:center;padding:14px 20px;font-size:.78rem;}
+  .phil{grid-template-columns:1fr 1fr;gap:20px;padding:60px 20px;}
+  .phil-en{font-size:clamp(1.1rem,4.5vw,1.5rem);line-height:1.5;}
+  .phil-jp{font-size:.78rem;line-height:2.2;}
+  .phil-sig{font-size:.72rem;}
+  .s{padding:60px 20px;}
+  .res-grid{grid-template-columns:1fr 1fr;max-width:100%;gap:8px;}
+  .res-btn{padding:16px 14px;}
+  .rb-l{font-size:.74rem;}
+  .rb-s{font-size:.65rem;}
+  .diag-wrap{padding:48px 20px;}
+  .diag-steps{grid-template-columns:1fr;gap:8px;}
+  .d-step{padding:20px 18px;gap:8px;}
+  .d-title{font-size:.82rem;}
+  .exp-grid{grid-template-columns:1fr 1fr;max-width:100%;gap:8px;}
+  .e-card{padding:14px 14px;}
+  .e-label{font-size:.62rem;}
+  .e-title{font-size:.76rem;}
+  .e-arrow{opacity:.6;}
+  .f-nav{gap:6px 16px;}
+  .f-nav a{font-size:.68rem;}
+  .f-catchcopy{font-size:.72rem;text-align:center;}
+  footer{padding:32px 20px;}
+  .cur,.cur-ring{display:none;}
+  .id-item{font-size:clamp(.78rem,3.5vw,.95rem);}
 }
-@media(max-width:480px){
-  .exp-grid,.res-grid{grid-template-columns:1fr;}
+@media(max-width:380px){
+  .phil{grid-template-columns:1fr;gap:24px;}
+  .res-grid{grid-template-columns:1fr;}
+  .exp-grid{grid-template-columns:1fr;}
 }
 @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
 </style>
