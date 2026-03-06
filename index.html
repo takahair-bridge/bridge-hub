@@ -154,6 +154,15 @@ footer{background:var(--footer);border-top:1px solid var(--line);padding:clamp(3
 .r.v{opacity:1;transform:none;}
 .r.d1{transition-delay:.1s;}.r.d2{transition-delay:.2s;}.r.d3{transition-delay:.3s;}
 
+.h-burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none;}
+.h-burger span{display:block;width:22px;height:1px;background:var(--ink2);transition:all .3s;}
+.h-burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+.h-burger.open span:nth-child(2){opacity:0;}
+.h-burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+.mob-nav{display:none;position:fixed;top:56px;left:0;right:0;background:rgba(249,246,242,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:16px 24px;z-index:400;flex-direction:column;}
+.mob-nav.open{display:flex;}
+.mob-nav a{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.9rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink2);text-decoration:none;padding:12px 0;border-bottom:1px solid var(--line);transition:color .3s;}
+.mob-nav a:last-child{border-bottom:none;}
 @media(max-width:768px){
   nav,.h-actions{display:none;}
   .h-burger{display:flex;}
@@ -207,16 +216,6 @@ footer{background:var(--footer);border-top:1px solid var(--line);padding:clamp(3
   .res-grid{grid-template-columns:1fr;}
 }
 @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
-
-.h-burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none;}
-.h-burger span{display:block;width:22px;height:1px;background:var(--ink2);transition:all .3s;}
-.h-burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg);}
-.h-burger.open span:nth-child(2){opacity:0;}
-.h-burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
-.mob-nav{display:none;position:fixed;top:56px;left:0;right:0;background:rgba(249,246,242,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:16px 24px;z-index:400;flex-direction:column;}
-.mob-nav.open{display:flex;}
-.mob-nav a{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.9rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink2);text-decoration:none;padding:12px 0;border-bottom:1px solid var(--line);transition:color .3s;}
-.mob-nav a:last-child{border-bottom:none;}
 </style>
 </head>
 <body>
