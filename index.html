@@ -222,6 +222,17 @@ footer{background:var(--footer);border-top:1px solid var(--line);padding:clamp(3
 .float-btn:hover{opacity:.85;transform:scale(1.06);}
 .float-line{background:#06c755;color:#fff;}
 .float-instagram{background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%);color:#fff;}
+
+/* ---- for visitors from abroad ---- */
+.abroad{ background:var(--footer); border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:34px 22px; }
+.abroad-in{ max-width:760px; margin:0 auto; text-align:center; }
+.abroad-lb{ display:inline-block; font-size:10.5px; letter-spacing:.28em; text-transform:uppercase; color:var(--gold); margin-bottom:12px; }
+.abroad-t{ font-family:'Cormorant Garamond',serif; font-weight:300; font-size:21px; line-height:1.5; color:var(--ink); margin:0 0 20px; }
+.abroad-btns{ display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
+.abroad-b1,.abroad-b2{ text-decoration:none; font-size:12px; letter-spacing:.16em; text-transform:uppercase; padding:13px 26px; display:inline-block; }
+.abroad-b1{ background:var(--ink); color:#fff; }
+.abroad-b2{ border:1px solid var(--line); color:var(--ink2); background:#fff; }
+@media(max-width:600px){ .abroad-t{ font-size:18px; } .abroad-b1,.abroad-b2{ width:100%; } }
 </style>
 </head>
 <body>
@@ -306,6 +317,18 @@ footer{background:var(--footer);border-top:1px solid var(--line);padding:clamp(3
     </div>
   </div>
 </section>
+
+<!-- FOR VISITORS FROM ABROAD -->
+<div class="abroad">
+  <div class="abroad-in">
+    <span class="abroad-lb">Visiting Japan?</span>
+    <p class="abroad-t">Everything below is in Japanese.<br>Here is the English way in.</p>
+    <div class="abroad-btns">
+      <a class="abroad-b1" href="https://takahair-bridge.github.io/hair-in-japan/" target="_blank" rel="noopener">Hair, in Japan &nbsp;&rarr;</a>
+      <a class="abroad-b2" href="https://takahair-bridge.github.io/bridge-oversea/" target="_blank" rel="noopener">Menu &amp; prices</a>
+    </div>
+  </div>
+</div>
 
 <!-- MARQUEE -->
 <div class="marquee-wrap">
